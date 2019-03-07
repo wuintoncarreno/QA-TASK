@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test runner" verbose="1" thread-count="2" parallel="tests">
+
+    <tests>
+        <test name="DEVAND18">
+            <parameters>
+                <parameter name="url" value="http://10.10.11.99:34724/wd/hub" />
+            </parameters>
+
+            <classes>
+                <packages>
+                    <package name="com.testng_appium_cucumber.*" />
+                </packages>
+            </classes>
+        </test>
+
+        <test name="DEVAND17">
+            <parameters>
+                <parameter name="url" value="http://10.10.11.99:34723/wd/hub" />
+            </parameters>
+
+            <classes>
+                <packages>
+                    <package name="com.testng_appium_cucumber.*" />
+                </packages>
+            </classes>
+        </test>
+
+    </tests>
+</suite>
